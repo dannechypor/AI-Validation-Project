@@ -1,0 +1,35 @@
+- Bind SonarCloud.io to created GitHub repository
+
+As of my last knowledge update in September 2021, I can provide you with general guidance on how to bind SonarCloud.io to a GitHub repository. However, please note that the steps or interface might have changed since then, so I recommend checking the official documentation for the most up-to-date instructions.
+
+To bind SonarCloud.io to a GitHub repository, you would generally follow these steps:
+
+Create a SonarCloud.io Account:
+If you don't have a SonarCloud.io account, you'll need to create one. You can sign up using your GitHub credentials.
+
+Set Up Your Project on SonarCloud:
+Once you have an account, you need to set up your project on SonarCloud. This typically involves specifying the repository you want to analyze and providing any necessary project configurations.
+
+Generate a SonarCloud Token:
+SonarCloud requires an access token to interact with your repository. Generate a token from your SonarCloud account settings. Make sure to grant it the necessary permissions to access your GitHub repositories.
+
+Add SonarCloud Configuration to Your GitHub Repository:
+You need to configure your GitHub repository to work with SonarCloud. This usually involves adding a sonar-project.properties file to the root of your repository. This file contains project-specific configuration settings for the SonarCloud analysis.
+
+Here's an example of what a sonar-project.properties file might look like:
+
+sonar.projectKey=your-project-key
+sonar.organization=your-organization-key
+sonar.sources=src
+sonar.host.url=https://sonarcloud.io
+sonar.login=your-sonarcloud-token
+
+Replace your-project-key, your-organization-key, and your-sonarcloud-token with your actual project and token information.
+
+Trigger SonarCloud Analysis:
+After setting up the configuration, you can trigger a SonarCloud analysis. This can usually be done by pushing changes to your GitHub repository or using specific commands depending on your build and CI/CD setup.
+
+View SonarCloud Results:
+Once the analysis is complete, you can log in to your SonarCloud.io account to view the analysis results, code quality metrics, and any issues detected in your codebase.
+
+Remember that the above steps are a general guideline and the exact process might vary based on updates to the platforms. Make sure to consult the latest documentation for both SonarCloud.io and GitHub for detailed and current instructions on how to set up and bind SonarCloud to your GitHub repository.
