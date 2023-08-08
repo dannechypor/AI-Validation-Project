@@ -1,0 +1,699 @@
+{"name":{"common":"Saudi Arabia","official":"Kingdom of Saudi Arabia","nativeName":{"ara":{"official":"المملكة العربية السعودية","common":"العربية السعودية"}}},"tld":[".sa",".السعودية"],"cca2":"SA","ccn3":"682","cca3":"SAU","cioc":"KSA","independent":true,"status":"officially-assigned","unMember":true,"currencies":{"SAR":{"name":"Saudi riyal","symbol":"ر.س"}},"idd":{"root":"+9","suffixes":["66"]},"capital":["Riyadh"],"altSpellings":["Saudi","SA","Kingdom of Saudi Arabia","Al-Mamlakah al-‘Arabiyyah as-Su‘ūdiyyah"],"region":"Asia","subregion":"Western Asia","languages":{"ara":"Arabic"},"translations":{"ara":{"official":"المملكة العربية السعودية","common":"السعودية"},"bre":{"official":"Rouantelezh Arabia Saoudat","common":"Arabia Saoudat"},"ces":{"official":"Saúdskoarabské království","common":"Saúdská Arábie"},"cym":{"official":"Kingdom of Saudi Arabia","common":"Saudi Arabia"},"deu":{"official":"Königreich Saudi-Arabien","common":"Saudi-Arabien"},"est":{"official":"Saudi Araabia Kuningriik","common":"Saudi Araabia"},"fin":{"official":"Saudi-Arabian kuningaskunta","common":"Saudi-Arabia"},"fra":{"official":"Royaume d'Arabie Saoudite","common":"Arabie Saoudite"},"hrv":{"official":"Kraljevina Saudijska Arabija","common":"Saudijska Arabija"},"hun":{"official":"Szaúd-Arábia","common":"Szaúd-Arábia"},"ita":{"official":"Arabia Saudita","common":"Arabia Saudita"},"jpn":{"official":"サウジアラビア王国","common":"サウジアラビア"},"kor":{"official":"사우디아라비아 왕국","common":"사우디아라비아"},"nld":{"official":"Koninkrijk van Saoedi-Arabië","common":"Saoedi-Arabië"},"per":{"official":"پادشاهی عربی سَعودی","common":"عربستان سعودی"},"pol":{"official":"Królestwo Arabii Saudyjskiej","common":"Arabia Saudyjska"},"por":{"official":"Reino da Arábia Saudita","common":"Arábia Saudita"},"rus":{"official":"Королевство Саудовская Аравия","common":"Саудовская Аравия"},"slk":{"official":"Saudskoarabské kráľovstvo","common":"Saudská Arábia"},"spa":{"official":"Reino de Arabia Saudita","common":"Arabia Saudí"},"srp":{"official":"Краљевина Саудијска Арабија","common":"Саудијска Арабија"},"swe":{"official":"Kungadömet Saudiarabien","common":"Saudiarabien"},"tur":{"official":"Suudi Arabistan Krallığı","common":"Suudi Arabistan"},"urd":{"official":"مملکتِ سعودی عرب","common":"سعودی عرب"},"zho":{"official":"沙特阿拉伯王国","common":"沙特阿拉伯"}},"latlng":[25.0,45.0],"landlocked":false,"borders":["IRQ","JOR","KWT","OMN","QAT","ARE","YEM"],"area":2149690.0,"demonyms":{"eng":{"f":"Saudi Arabian","m":"Saudi Arabian"},"fra":{"f":"Saoudienne","m":"Saoudien"}},"flag":"\uD83C\uDDF8\uD83C\uDDE6","maps":{"googleMaps":"https://goo.gl/maps/5PSjvdJ1AyaLFRrG9","openStreetMaps":"https://www.openstreetmap.org/relation/307584"},"population":34813867,"fifa":"KSA","car":{"signs":["SA"],"side":"right"},"timezones":["UTC+03:00"],"continents":["Asia"],"flags":{"png":"https://flagcdn.com/w320/sa.png","svg":"https://flagcdn.com/sa.svg","alt":"The flag of Saudi Arabia has a green field, at the center of which is an Arabic inscription — the Shahada — in white above a white horizontal sabre with its tip pointed to the hoist side of the field."},"coatOfArms":{"png":"https://mainfacts.com/media/images/coats_of_arms/sa.png","svg":"https://mainfacts.com/media/images/coats_of_arms/sa.svg"},"startOfWeek":"sunday","capitalInfo":{"latlng":[24.65,46.7]},"postalCode":{"format":"#####","regex":"^(\\d{5})$"}} 
+
+Validate and write formated 
+ChatGPT
+The provided JSON data appears to describe information about Saudi Arabia. Here is the formatted version of the data:
+
+json
+Copy code
+{
+   "name":{
+      "common":"Saudi Arabia",
+      "official":"Kingdom of Saudi Arabia",
+      "nativeName":{
+         "ara":{
+            "official":"المملكة العربية السعودية",
+            "common":"العربية السعودية"
+         }
+      }
+   },
+   "tld":[
+      ".sa",
+      ".السعودية"
+   ],
+   "cca2":"SA",
+   "ccn3":"682",
+   "cca3":"SAU",
+   "cioc":"KSA",
+   "independent":true,
+   "status":"officially-assigned",
+   "unMember":true,
+   "currencies":{
+      "SAR":{
+         "name":"Saudi riyal",
+         "symbol":"ر.س"
+      }
+   },
+   "idd":{
+      "root":"+9",
+      "suffixes":[
+         "66"
+      ]
+   },
+   "capital":[
+      "Riyadh"
+   ],
+   "altSpellings":[
+      "Saudi",
+      "SA",
+      "Kingdom of Saudi Arabia",
+      "Al-Mamlakah al-‘Arabiyyah as-Su‘ūdiyyah"
+   ],
+   "region":"Asia",
+   "subregion":"Western Asia",
+   "languages":{
+      "ara":"Arabic"
+   },
+   "translations":{
+      "ara":{
+         "official":"المملكة العربية السعودية",
+         "common":"السعودية"
+      },
+      "bre":{
+         "official":"Rouantelezh Arabia Saoudat",
+         "common":"Arabia Saoudat"
+      },
+      "ces":{
+         "official":"Saúdskoarabské království",
+         "common":"Saúdská Arábie"
+      },
+      "cym":{
+         "official":"Kingdom of Saudi Arabia",
+         "common":"Saudi Arabia"
+      },
+      "deu":{
+         "official":"Königreich Saudi-Arabien",
+         "common":"Saudi-Arabien"
+      },
+      "est":{
+         "official":"Saudi Araabia Kuningriik",
+         "common":"Saudi Araabia"
+      },
+      "fin":{
+         "official":"Saudi-Arabian kuningaskunta",
+         "common":"Saudi-Arabia"
+      },
+      "fra":{
+         "official":"Royaume d'Arabie Saoudite",
+         "common":"Arabie Saoudite"
+      },
+      "hrv":{
+         "official":"Kraljevina Saudijska Arabija",
+         "common":"Saudijska Arabija"
+      },
+      "hun":{
+         "official":"Szaúd-Arábia",
+         "common":"Szaúd-Arábia"
+      },
+      "ita":{
+         "official":"Arabia Saudita",
+         "common":"Arabia Saudita"
+      },
+      "jpn":{
+         "official":"サウジアラビア王国",
+         "common":"サウジアラビア"
+      },
+      "kor":{
+         "official":"사우디아라비아 왕국",
+         "common":"사우디아라비아"
+      },
+      "nld":{
+         "official":"Koninkrijk van Saoedi-Arabië",
+         "common":"Saoedi-Arabië"
+      },
+      "per":{
+         "official":"پادشاهی عربی سَعودی",
+         "common":"عربستان سعودی"
+      },
+      "pol":{
+         "official":"Królestwo Arabii Saudyjskiej",
+         "common":"Arabia Saudyjska"
+      },
+      "por":{
+         "official":"Reino da Arábia Saudita",
+         "common":"Arábia Saudita"
+      },
+      "rus":{
+         "official":"Королевство Саудовская Аравия",
+         "common":"Саудовская Аравия"
+      },
+      "slk":{
+         "official":"Saudskoarabské kráľovstvo",
+         "common":"Saudská Arábia"
+      },
+      "spa":{
+         "official":"Reino de Arabia Saudita",
+         "common":"Arabia Saudí"
+      },
+      "srp":{
+         "official":"Краљевина Саудијска Арабија",
+         "common":"Саудијска Арабија"
+      },
+      "swe":{
+         "official":"Kungadömet Saudiarabien",
+         "common":"Saudiarabien"
+      },
+      "tur":{
+         "official":"Suudi Arabistan Krallığı",
+         "common":"Suudi Arabistan"
+      },
+      "urd":{
+         "official":"مملکتِ سعودی عرب",
+         "common":"سعودی عرب"
+      },
+      "zho":{
+         "official":"沙特阿拉伯王国",
+         "common":"沙特阿拉伯"
+      }
+   },
+   "latlng":[
+      25.0,
+      45.0
+   ],
+   "landlocked":false,
+   "borders":[
+      "IRQ",
+      "JOR",
+      "KWT",
+      "OMN",
+      "QAT",
+      "ARE",
+      "YEM"
+   ],
+   "area":2149690.0,
+   "demonyms":{
+      "eng":{
+         "f":"Saudi Arabian",
+         "m":"Saudi Arabian"
+      },
+      "fra":{
+         "f":"Saoudienne",
+         "m":"Saoudien"
+      }
+   },
+   "flag":"\uD83C\uDDF8\uD83C\uDDE6",
+   "maps":{
+      "googleMaps":"https://goo.gl/maps/5PSjvdJ1AyaLFRrG9",
+      "openStreetMaps":"https://www.openstreetmap.org/relation/307584"
+   },
+   "population":34813867,
+   "fifa":"KSA",
+   "car":{
+      "signs":[
+         "SA"
+      ],
+      "side":"right"
+   },
+   "timezones":[
+      "UTC+03:00"
+   ],
+   "continents":[
+      "Asia"
+   ],
+   "flags":{
+      "png":"https://flagcdn.com/w320/sa.png",
+      "svg":"https://flagcdn.com/sa.svg",
+      "alt":"The flag of Saudi Arabia has a green field, at the center of which is an Arabic inscription — the Shahada — in white above a white horizontal sabre with its tip pointed to the hoist side of the field."
+   },
+   "coatOfArms":{
+      "png":"https://mainfacts.com/media/images/coats_of_arms/sa.png",
+      "svg":"https://mainfacts.com/media/images/coats_of_arms/sa.svg"
+   },
+   "startOfWeek":"sunday",
+   "capitalInfo":{
+      "latlng":[
+         24.65,
+         46.7
+      ]
+   },
+   "postalCode":{
+      "format":"#####",
+      "regex":"^(\\d{5})$"
+   }
+}
+Please note that this formatted JSON is presented for better readability and understanding.
+
+
+
+
+User
+Write a c# class representation without duplication for this json. To store data of this json inside class object 
+ChatGPT
+Here's a C# class representation that corresponds to the JSON data you provided. The class is designed to store the data from the JSON object without duplication:
+
+csharp
+Copy code
+using System;
+using System.Collections.Generic;
+
+public class Name
+{
+    public string Common { get; set; }
+    public string Official { get; set; }
+    public Dictionary<string, NativeName> NativeName { get; set; }
+}
+
+public class NativeName
+{
+    public string Official { get; set; }
+    public string Common { get; set; }
+}
+
+public class Currencies
+{
+    public Currency SAR { get; set; }
+}
+
+public class Currency
+{
+    public string Name { get; set; }
+    public string Symbol { get; set; }
+}
+
+public class Idd
+{
+    public string Root { get; set; }
+    public List<string> Suffixes { get; set; }
+}
+
+public class Languages
+{
+    public string Ara { get; set; }
+}
+
+public class Translations
+{
+    public Translation Ara { get; set; }
+    public Translation Bre { get; set; }
+    // Add other translation properties as needed...
+}
+
+public class Translation
+{
+    public string Official { get; set; }
+    public string Common { get; set; }
+}
+
+public class Demonyms
+{
+    public Demonym Eng { get; set; }
+    public Demonym Fra { get; set; }
+}
+
+public class Demonym
+{
+    public string F { get; set; }
+    public string M { get; set; }
+}
+
+public class Car
+{
+    public List<string> Signs { get; set; }
+    public string Side { get; set; }
+}
+
+public class Flags
+{
+    public string Png { get; set; }
+    public string Svg { get; set; }
+    public string Alt { get; set; }
+}
+
+public class Maps
+{
+    public string GoogleMaps { get; set; }
+    public string OpenStreetMaps { get; set; }
+}
+
+public class PostalCode
+{
+    public string Format { get; set; }
+    public string Regex { get; set; }
+}
+
+public class CapitalInfo
+{
+    public List<double> Latlng { get; set; }
+}
+
+public class SaudiArabiaData
+{
+    public Name Name { get; set; }
+    public List<string> Tld { get; set; }
+    public string Cca2 { get; set; }
+    public string Ccn3 { get; set; }
+    public string Cca3 { get; set; }
+    public string Cioc { get; set; }
+    public bool Independent { get; set; }
+    public string Status { get; set; }
+    public bool UnMember { get; set; }
+    public Currencies Currencies { get; set; }
+    public Idd Idd { get; set; }
+    public List<string> Capital { get; set; }
+    public List<string> AltSpellings { get; set; }
+    public string Region { get; set; }
+    public string Subregion { get; set; }
+    public Languages Languages { get; set; }
+    public Translations Translations { get; set; }
+    public List<double> Latlng { get; set; }
+    public bool Landlocked { get; set; }
+    public List<string> Borders { get; set; }
+    public double Area { get; set; }
+    public Demonyms Demonyms { get; set; }
+    public string Flag { get; set; }
+    public Maps Maps { get; set; }
+    public int Population { get; set; }
+    public string Fifa { get; set; }
+    public Car Car { get; set; }
+    public List<string> Timezones { get; set; }
+    public List<string> Continents { get; set; }
+    public Flags Flags { get; set; }
+    public CoatOfArms CoatOfArms { get; set; }
+    public string StartOfWeek { get; set; }
+    public CapitalInfo CapitalInfo { get; set; }
+    public PostalCode PostalCode { get; set; }
+}
+
+public class CoatOfArms
+{
+    public string Png { get; set; }
+    public string Svg { get; set; }
+}
+You can deserialize the JSON data into an object of the SaudiArabiaData class using libraries like Newtonsoft.Json (Json.NET) or System.Text.Json in C#.
+
+
+
+
+User
+write whole translation object independently 
+ChatGPT
+Sure, here's the C# class representation for the Translations object:
+
+csharp
+Copy code
+public class Translations
+{
+    public Translation Ara { get; set; }
+    public Translation Bre { get; set; }
+    public Translation Ces { get; set; }
+    public Translation Cym { get; set; }
+    public Translation Deu { get; set; }
+    public Translation Est { get; set; }
+    public Translation Fin { get; set; }
+    public Translation Fra { get; set; }
+    public Translation Hrv { get; set; }
+    public Translation Hun { get; set; }
+    public Translation Ita { get; set; }
+    public Translation Jpn { get; set; }
+    public Translation Kor { get; set; }
+    public Translation Nld { get; set; }
+    public Translation Per { get; set; }
+    public Translation Pol { get; set; }
+    public Translation Por { get; set; }
+    public Translation Rus { get; set; }
+    public Translation Slk { get; set; }
+    public Translation Spa { get; set; }
+    public Translation Srp { get; set; }
+    public Translation Swe { get; set; }
+    public Translation Tur { get; set; }
+    public Translation Urd { get; set; }
+    public Translation Zho { get; set; }
+}
+
+public class Translation
+{
+    public string Official { get; set; }
+    public string Common { get; set; }
+}
+This class represents the Translations object and its sub-objects for each language translation. You can use this class structure to deserialize the translation data from the JSON object.
+
+
+
+
+User
+Create the endpoint that accepts parameters. Endpoint could accept from 0 to 4 parameters, type string, number, string. CountryName. CountryPopulation, SortBy parameter. 
+Make a request to the public `REST Countries` API using endpoint https://restcountries.com/v3.1/all
+ChatGPT
+Here's an example of how you could create an ASP.NET Core Web API endpoint that accepts parameters and makes a request to the public REST Countries API using the provided endpoint (https://restcountries.com/v3.1/all). This example assumes you have an ASP.NET Core project set up and are familiar with creating controllers and making HTTP requests.
+
+Create a new controller in your ASP.NET Core project (e.g., CountryController.cs).
+
+Add the following code to your controller to define the endpoint:
+
+csharp
+Copy code
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+namespace YourNamespace.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class CountryController : ControllerBase
+    {
+        private readonly IHttpClientFactory _httpClientFactory;
+
+        public CountryController(IHttpClientFactory httpClientFactory)
+        {
+            _httpClientFactory = httpClientFactory;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<object>>> GetCountries(
+            [FromQuery(Name = "CountryName")] string countryName,
+            [FromQuery(Name = "CountryPopulation")] int? countryPopulation,
+            [FromQuery(Name = "SortBy")] string sortBy)
+        {
+            try
+            {
+                // Create an HttpClient instance using the IHttpClientFactory
+                var httpClient = _httpClientFactory.CreateClient();
+
+                // Construct the URL based on the provided parameters
+                var apiUrl = "https://restcountries.com/v3.1/all";
+                var queryParams = new List<string>();
+                
+                if (!string.IsNullOrEmpty(countryName))
+                {
+                    queryParams.Add($"name={Uri.EscapeDataString(countryName)}");
+                }
+                if (countryPopulation.HasValue)
+                {
+                    queryParams.Add($"population={countryPopulation}");
+                }
+                if (!string.IsNullOrEmpty(sortBy))
+                {
+                    queryParams.Add($"sortby={Uri.EscapeDataString(sortBy)}");
+                }
+
+                if (queryParams.Count > 0)
+                {
+                    apiUrl += "?" + string.Join("&", queryParams);
+                }
+
+                // Make the GET request to the external API
+                var response = await httpClient.GetAsync(apiUrl);
+
+                // Ensure a successful response
+                response.EnsureSuccessStatusCode();
+
+                // Deserialize the response content to a dynamic object
+                var countries = await response.Content.ReadAsAsync<IEnumerable<object>>();
+
+                return Ok(countries);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+        }
+    }
+}
+In your Startup.cs file, add the necessary configuration to register the IHttpClientFactory in the dependency injection container:
+csharp
+Copy code
+public void ConfigureServices(IServiceCollection services)
+{
+    // ... other configurations ...
+
+    // Add HttpClient for making HTTP requests
+    services.AddHttpClient();
+    
+    // ... other configurations ...
+}
+Now you can run your ASP.NET Core application and access the endpoint using various combinations of query parameters:
+GET /api/country
+GET /api/country?CountryName=United
+GET /api/country?CountryName=United&CountryPopulation=5000000
+GET /api/country?CountryName=United&SortBy=name
+Remember to replace YourNamespace with the actual namespace of your project. This example demonstrates how to create an endpoint that accepts parameters and makes requests to an external API. You can modify and extend the code according to your specific requirements.
+
+
+
+
+User
+Add one more parameter named pagination 
+ChatGPT
+Sure, I've added the pagination parameter to the endpoint code. Here's the updated code for your CountryController.cs:
+
+csharp
+Copy code
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+namespace YourNamespace.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class CountryController : ControllerBase
+    {
+        private readonly IHttpClientFactory _httpClientFactory;
+
+        public CountryController(IHttpClientFactory httpClientFactory)
+        {
+            _httpClientFactory = httpClientFactory;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<object>>> GetCountries(
+            [FromQuery(Name = "CountryName")] string countryName,
+            [FromQuery(Name = "CountryPopulation")] int? countryPopulation,
+            [FromQuery(Name = "SortBy")] string sortBy,
+            [FromQuery(Name = "Pagination")] int? pagination)
+        {
+            try
+            {
+                // Create an HttpClient instance using the IHttpClientFactory
+                var httpClient = _httpClientFactory.CreateClient();
+
+                // Construct the URL based on the provided parameters
+                var apiUrl = "https://restcountries.com/v3.1/all";
+                var queryParams = new List<string>();
+
+                if (!string.IsNullOrEmpty(countryName))
+                {
+                    queryParams.Add($"name={Uri.EscapeDataString(countryName)}");
+                }
+                if (countryPopulation.HasValue)
+                {
+                    queryParams.Add($"population={countryPopulation}");
+                }
+                if (!string.IsNullOrEmpty(sortBy))
+                {
+                    queryParams.Add($"sortby={Uri.EscapeDataString(sortBy)}");
+                }
+                if (pagination.HasValue)
+                {
+                    queryParams.Add($"pagination={pagination}");
+                }
+
+                if (queryParams.Count > 0)
+                {
+                    apiUrl += "?" + string.Join("&", queryParams);
+                }
+
+                // Make the GET request to the external API
+                var response = await httpClient.GetAsync(apiUrl);
+
+                // Ensure a successful response
+                response.EnsureSuccessStatusCode();
+
+                // Deserialize the response content to a dynamic object
+                var countries = await response.Content.ReadAsAsync<IEnumerable<object>>();
+
+                return Ok(countries);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+        }
+    }
+}
+Now you can include the Pagination parameter in your query to control the number of results returned from the REST Countries API. For example:
+
+GET /api/country?Pagination=10 (Returns the first 10 countries)
+GET /api/country?CountryName=United&Pagination=5 (Returns the first 5 countries matching the name "United")
+
+
+
+User
+[HttpGet]
+    public async Task<ActionResult<IEnumerable<object>>> GetCountries(
+        [FromQuery(Name = "CountryName")] string? countryName,
+        [FromQuery(Name = "CountryPopulation")] int? countryPopulation,
+        [FromQuery(Name = "SortBy")] string? sortBy,  
+        [FromQuery(Name = "Pagination")] int? pagination)
+    {
+        var countries = await _countryService.GetCountriesDataAsync();
+        
+        return Ok(countries);
+    }
+
+Rewrite this method to use queryParameters as one object inside a endpoint 
+ChatGPT
+Certainly! You can create a class to encapsulate all the query parameters and use that class as a single object parameter in your endpoint. Here's how you can rewrite your method:
+
+Create a class to represent the query parameters:
+csharp
+Copy code
+public class CountryQueryParameters
+{
+    public string? CountryName { get; set; }
+    public int? CountryPopulation { get; set; }
+    public string? SortBy { get; set; }
+    public int? Pagination { get; set; }
+}
+Update your controller method to use the CountryQueryParameters class:
+csharp
+Copy code
+[HttpGet]
+public async Task<ActionResult<IEnumerable<object>>> GetCountries([FromQuery] CountryQueryParameters queryParameters)
+{
+    try
+    {
+        // Create an HttpClient instance using the IHttpClientFactory
+        var httpClient = _httpClientFactory.CreateClient();
+
+        // Construct the URL based on the provided query parameters
+        var apiUrl = "https://restcountries.com/v3.1/all";
+        var queryParams = new List<string>();
+
+        if (!string.IsNullOrEmpty(queryParameters.CountryName))
+        {
+            queryParams.Add($"name={Uri.EscapeDataString(queryParameters.CountryName)}");
+        }
+        if (queryParameters.CountryPopulation.HasValue)
+        {
+            queryParams.Add($"population={queryParameters.CountryPopulation}");
+        }
+        if (!string.IsNullOrEmpty(queryParameters.SortBy))
+        {
+            queryParams.Add($"sortby={Uri.EscapeDataString(queryParameters.SortBy)}");
+        }
+        if (queryParameters.Pagination.HasValue)
+        {
+            queryParams.Add($"pagination={queryParameters.Pagination}");
+        }
+
+        if (queryParams.Count > 0)
+        {
+            apiUrl += "?" + string.Join("&", queryParams);
+        }
+
+        // Make the GET request to the external API
+        var response = await httpClient.GetAsync(apiUrl);
+
+        // Ensure a successful response
+        response.EnsureSuccessStatusCode();
+
+        // Deserialize the response content to a dynamic object
+        var countries = await response.Content.ReadAsAsync<IEnumerable<object>>();
+
+        return Ok(countries);
+    }
+    catch (Exception ex)
+    {
+        return StatusCode(500, $"An error occurred: {ex.Message}");
+    }
+}
+Now you can call the endpoint with a single object containing all the query parameters:
+
+GET /api/country?CountryName=United&CountryPopulation=5000000&SortBy=name&Pagination=10
+This approach keeps the code clean and allows you to easily manage and expand the query parameters in the future.
