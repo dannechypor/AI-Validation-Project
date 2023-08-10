@@ -35,7 +35,7 @@ public class CountryService : ICountryService
         {
             countries = FilterByPopulation(countries, countryFilterDto.CountryPopulation.Value);
         }
-        
+
         if (!string.IsNullOrWhiteSpace(countryFilterDto.SortBy))
         {
             countries = SortCountriesByName(countries, countryFilterDto.SortBy);
@@ -63,13 +63,14 @@ public class CountryService : ICountryService
 
     private static List<CountryDto> SortCountriesByName(List<CountryDto> countries, string sortOrder)
     {
-        if (string.Equals(sortOrder, "ascend"))
+        if (string.Equals(sortOrder, "ascend", StringComparison.OrdinalIgnoreCase))
         {
             countries = countries.OrderBy(country => country.Name.Common, StringComparer.OrdinalIgnoreCase).ToList();
         }
-        else if (string.Equals(sortOrder, "descend"))
+        else if (string.Equals(sortOrder, "descend", StringComparison.OrdinalIgnoreCase))
         {
-            countries = countries.OrderByDescending(country => country.Name.Common, StringComparer.OrdinalIgnoreCase).ToList();
+            countries = countries.OrderByDescending(country => country.Name.Common, StringComparer.OrdinalIgnoreCase)
+                .ToList();
         }
         else
         {
