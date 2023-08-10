@@ -31,6 +31,11 @@ public class CountryService : ICountryService
             countries = FilterCountriesByName(countries, countryFilterDto.CountryName);
         }
 
+        if (countryFilterDto.CountryPopulation.HasValue)
+        {
+            countries = FilterByPopulation(countries, countryFilterDto.CountryPopulation.Value);
+        }
+
         return countries;
     }
 
@@ -42,5 +47,12 @@ public class CountryService : ICountryService
                 country.Name.Common.ToLower().Contains(searchQuery) ||
                 country.Name.Official.ToLower().Contains(searchQuery))
             .ToList();
+    }
+
+    private List<CountryDto> FilterByPopulation(IEnumerable<CountryDto> countries, int maxPopulationMillions)
+    {
+        double maxPopulation = maxPopulationMillions * 1_000_000; // Convert millions to actual population
+
+        return countries.Where(country => country.Population < maxPopulation).ToList();
     }
 }
