@@ -1,0 +1,928 @@
+public class CountryDto
+{
+    [JsonPropertyName("name")]
+    public Name Name { get; set; }
+    
+    [JsonPropertyName("tld")]
+    public List<string> Tld { get; set; }
+    
+    [JsonPropertyName("cca2")]
+    public string Cca2 { get; set; }
+    
+    [JsonPropertyName("ccn3")]
+    public string Ccn3 { get; set; }
+    
+    [JsonPropertyName("cca3")]
+    public string Cca3 { get; set; }
+    
+    [JsonPropertyName("cioc")]
+    public string Cioc { get; set; }
+    
+    [JsonPropertyName("independent")]
+    public bool Independent { get; set; }
+    
+    [JsonPropertyName("status")]
+    public string Status { get; set; }
+    
+    [JsonPropertyName("unMember")]
+    public bool UnMember { get; set; }
+    
+    [JsonPropertyName("currencies")]
+    public Currencies Currencies { get; set; }
+    
+    [JsonPropertyName("idd")]
+    public Idd Idd { get; set; }
+    
+    [JsonPropertyName("capital")]
+    public List<string> Capital { get; set; }
+    
+    [JsonPropertyName("altSpellings")]
+    public List<string> AltSpellings { get; set; }
+    
+    [JsonPropertyName("region")]
+    public string Region { get; set; }
+    
+    [JsonPropertyName("subregion")]
+    public string Subregion { get; set; }
+    
+    [JsonPropertyName("languages")]
+    public Languages Languages { get; set; }
+    
+    [JsonPropertyName("translations")]
+    public Translations Translations { get; set; }
+    
+    [JsonPropertyName("latlng")]
+    public List<double> Latlng { get; set; }
+    
+    [JsonPropertyName("landlocked")]
+    public bool Landlocked { get; set; }
+    
+    [JsonPropertyName("borders")]
+    public List<string> Borders { get; set; }
+    
+    [JsonPropertyName("area")]
+    public double Area { get; set; }
+    
+    [JsonPropertyName("demonyms")]
+    public Demonyms Demonyms { get; set; }
+    
+    [JsonPropertyName("flag")]
+    public string Flag { get; set; }
+    
+    [JsonPropertyName("maps")]
+    public Maps Maps { get; set; }
+    
+    [JsonPropertyName("population")]
+    public int Population { get; set; }
+    
+    [JsonPropertyName("fifa")]
+    public string Fifa { get; set; }
+    
+    [JsonPropertyName("car")]
+    public Car Car { get; set; }
+    
+    [JsonPropertyName("timezones")]
+    public List<string> Timezones { get; set; }
+    
+    [JsonPropertyName("continents")]
+    public List<string> Continents { get; set; }
+    
+    [JsonPropertyName("flags")]
+    public Flags Flags { get; set; }
+    
+    [JsonPropertyName("coatOfArms")]
+    public CoatOfArms CoatOfArms { get; set; }
+    
+    [JsonPropertyName("startOfWeek")]
+    public string StartOfWeek { get; set; }
+    
+    [JsonPropertyName("capitalInfo")]
+    public CapitalInfo CapitalInfo { get; set; }
+    
+    [JsonPropertyName("postalCode")]
+    public PostalCode PostalCode { get; set; }
+}
+
+public class Name
+{
+    [JsonPropertyName("common")]
+    public string Common { get; set; }
+    
+    [JsonPropertyName("official")]
+    public string Official { get; set; }
+    
+    [JsonPropertyName("nativeName")]
+    public Dictionary<string, NativeName> NativeName { get; set; }
+}
+
+public class NativeName
+{
+    [JsonPropertyName("official")]
+    public string Official { get; set; }
+    
+    [JsonPropertyName("common")]
+    public string Common { get; set; }
+}
+
+public class Currencies
+{
+    [JsonPropertyName("sar")]
+    public Currency SAR { get; set; }
+}
+
+public class Currency
+{
+    [JsonPropertyName("name")]
+    public string Name { get; set; }
+    
+    [JsonPropertyName("symbol")]
+    public string Symbol { get; set; }
+}
+
+public class Idd
+{
+    [JsonPropertyName("root")]
+    public string Root { get; set; }
+    
+    [JsonPropertyName("suffixes")]
+    public List<string> Suffixes { get; set; }
+}
+
+public class Languages
+{
+    [JsonPropertyName("ara")]
+    public string Ara { get; set; }
+}
+
+public class Translations
+{
+    [JsonPropertyName("ara")]
+    public Translation Ara { get; set; }
+
+    [JsonPropertyName("bre")]
+    public Translation Bre { get; set; }
+
+    [JsonPropertyName("ces")]
+    public Translation Ces { get; set; }
+
+    [JsonPropertyName("cym")]
+    public Translation Cym { get; set; }
+
+    [JsonPropertyName("deu")]
+    public Translation Deu { get; set; }
+
+    [JsonPropertyName("est")]
+    public Translation Est { get; set; }
+
+    [JsonPropertyName("fin")]
+    public Translation Fin { get; set; }
+
+    [JsonPropertyName("fra")]
+    public Translation Fra { get; set; }
+
+    [JsonPropertyName("hrv")]
+    public Translation Hrv { get; set; }
+
+    [JsonPropertyName("hun")]
+    public Translation Hun { get; set; }
+
+    [JsonPropertyName("ita")]
+    public Translation Ita { get; set; }
+
+    [JsonPropertyName("jpn")]
+    public Translation Jpn { get; set; }
+
+    [JsonPropertyName("kor")]
+    public Translation Kor { get; set; }
+
+    [JsonPropertyName("nld")]
+    public Translation Nld { get; set; }
+
+    [JsonPropertyName("per")]
+    public Translation Per { get; set; }
+
+    [JsonPropertyName("pol")]
+    public Translation Pol { get; set; }
+
+    [JsonPropertyName("por")]
+    public Translation Por { get; set; }
+
+    [JsonPropertyName("rus")]
+    public Translation Rus { get; set; }
+
+    [JsonPropertyName("slk")]
+    public Translation Slk { get; set; }
+
+    [JsonPropertyName("spa")]
+    public Translation Spa { get; set; }
+
+    [JsonPropertyName("srp")]
+    public Translation Srp { get; set; }
+
+    [JsonPropertyName("swe")]
+    public Translation Swe { get; set; }
+
+    [JsonPropertyName("tur")]
+    public Translation Tur { get; set; }
+
+    [JsonPropertyName("urd")]
+    public Translation Urd { get; set; }
+
+    [JsonPropertyName("zho")]
+    public Translation Zho { get; set; }
+}
+
+public class Translation
+{
+    [JsonPropertyName("official")]
+    public string Official { get; set; }
+    
+    [JsonPropertyName("common")]
+    public string Common { get; set; }
+}
+
+public class Demonyms
+{
+    [JsonPropertyName("eng")]
+    public Demonym Eng { get; set; }
+    
+    [JsonPropertyName("fra")]
+    public Demonym Fra { get; set; }
+}
+
+public class Demonym
+{
+    [JsonPropertyName("f")]
+    public string F { get; set; }
+    
+    [JsonPropertyName("m")]
+    public string M { get; set; }
+}
+
+public class Car
+{
+    [JsonPropertyName("signs")]
+    public List<string> Signs { get; set; }
+    
+    [JsonPropertyName("side")]
+    public string Side { get; set; }
+}
+
+public class Flags
+{
+    [JsonPropertyName("png")]
+    public string Png { get; set; }
+    
+    [JsonPropertyName("svg")]
+    public string Svg { get; set; }
+    
+    [JsonPropertyName("alt")]
+    public string Alt { get; set; }
+}
+
+public class Maps
+{
+    [JsonPropertyName("googleMaps")]
+    public string GoogleMaps { get; set; }
+    
+    [JsonPropertyName("openStreetMaps")]
+    public string OpenStreetMaps { get; set; }
+}
+
+public class PostalCode
+{
+    [JsonPropertyName("format")]
+    public string Format { get; set; }
+    
+    [JsonPropertyName("regex")]
+    public string Regex { get; set; }
+}
+
+public class CapitalInfo
+{
+    [JsonPropertyName("latlng")]
+    public List<double> Latlng { get; set; }
+}
+
+public class CoatOfArms
+{
+    [JsonPropertyName("png")]
+    public string Png { get; set; }
+    
+    [JsonPropertyName("svg")]
+    public string Svg { get; set; }
+}
+
+Remember this form for next message 
+ChatGPT
+Sure, I've taken note of the class definitions you provided. If you have any questions or need assistance with these classes or related tasks, feel free to ask!
+
+
+
+
+User
+public static class CountryExtensions
+{
+    public static List<CountryDto> FilterByName(this IEnumerable<CountryDto> countries, string filter)
+    {
+        var searchQuery = filter.ToLower();
+        
+        return countries.Where(country =>
+                country.Name.Common.ToLower().Contains(searchQuery) ||
+                country.Name.Official.ToLower().Contains(searchQuery))
+            .ToList();
+    }
+
+    public static List<CountryDto> FilterByPopulation(this IEnumerable<CountryDto> countries, int maxPopulationMillions)
+    {
+        double maxPopulation = maxPopulationMillions * 1_000_000;
+        
+        return countries.Where(country => country.Population < maxPopulation).ToList();
+    }
+
+    public static List<CountryDto> SortByName(this IEnumerable<CountryDto> countries, string sortOrder)
+    {
+        if (string.Equals(sortOrder, "ascend", StringComparison.OrdinalIgnoreCase))
+        {
+            return countries.OrderBy(country => country.Name.Common, StringComparer.OrdinalIgnoreCase).ToList();
+        }
+        else if (string.Equals(sortOrder, "descend", StringComparison.OrdinalIgnoreCase))
+        {
+            return countries.OrderByDescending(country => country.Name.Common, StringComparer.OrdinalIgnoreCase)
+                .ToList();
+        }
+        else
+        {
+            throw new ArgumentException(ExceptionMessages.InvalidSortOrder, nameof(sortOrder));
+        }
+    }
+
+    public static List<CountryDto> Paginate(this IEnumerable<CountryDto> countries, int pagination)
+    {
+        if (pagination <= 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(pagination), ExceptionMessages.PaginationOutOfRange);
+        }
+        
+        return countries.Take(pagination).ToList();
+    }
+}
+
+Write NUnit tests with mocks for this class methods 
+ChatGPT
+Certainly! Here are NUnit tests for the methods in the CountryExtensions class, along with mock setups using a popular mocking framework called Moq. Make sure to install the Moq package in your project for these tests to work:
+
+csharp
+Copy code
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using NUnit.Framework;
+using Moq;
+
+[TestFixture]
+public class CountryExtensionsTests
+{
+    private List<CountryDto> _sampleCountries;
+
+    [SetUp]
+    public void Setup()
+    {
+        _sampleCountries = new List<CountryDto>
+        {
+            // Add sample CountryDto objects here for testing
+        };
+    }
+
+    [Test]
+    public void FilterByName_ShouldReturnFilteredCountries()
+    {
+        // Arrange
+        string filter = "United";
+        var countries = _sampleCountries.AsEnumerable();
+        
+        // Act
+        var filteredCountries = countries.FilterByName(filter);
+
+        // Assert
+        Assert.That(filteredCountries, Is.Not.Null);
+        // Add more specific assertions based on your sample data and filter conditions
+    }
+
+    [Test]
+    public void FilterByPopulation_ShouldReturnFilteredCountries()
+    {
+        // Arrange
+        int maxPopulationMillions = 100;
+        var countries = _sampleCountries.AsEnumerable();
+
+        // Act
+        var filteredCountries = countries.FilterByPopulation(maxPopulationMillions);
+
+        // Assert
+        Assert.That(filteredCountries, Is.Not.Null);
+        // Add more specific assertions based on your sample data and population condition
+    }
+
+    [Test]
+    [TestCase("ascend")]
+    [TestCase("descend")]
+    public void SortByName_ShouldReturnSortedCountries(string sortOrder)
+    {
+        // Arrange
+        var countries = _sampleCountries.AsEnumerable();
+
+        // Act
+        var sortedCountries = countries.SortByName(sortOrder);
+
+        // Assert
+        Assert.That(sortedCountries, Is.Not.Null);
+        // Add more specific assertions based on your sample data and sort order
+    }
+
+    [Test]
+    public void SortByName_InvalidSortOrder_ShouldThrowArgumentException()
+    {
+        // Arrange
+        var countries = _sampleCountries.AsEnumerable();
+        string invalidSortOrder = "invalid";
+
+        // Act & Assert
+        Assert.Throws<ArgumentException>(() => countries.SortByName(invalidSortOrder));
+    }
+
+    [Test]
+    [TestCase(5)]
+    [TestCase(10)]
+    public void Paginate_ShouldReturnPaginatedCountries(int pagination)
+    {
+        // Arrange
+        var countries = _sampleCountries.AsEnumerable();
+
+        // Act
+        var paginatedCountries = countries.Paginate(pagination);
+
+        // Assert
+        Assert.That(paginatedCountries, Is.Not.Null);
+        // Add more specific assertions based on your sample data and pagination
+    }
+
+    [Test]
+    public void Paginate_InvalidPagination_ShouldThrowArgumentOutOfRangeException()
+    {
+        // Arrange
+        var countries = _sampleCountries.AsEnumerable();
+        int invalidPagination = 0;
+
+        // Act & Assert
+        Assert.Throws<ArgumentOutOfRangeException>(() => countries.Paginate(invalidPagination));
+    }
+}
+Please note that you need to provide sample CountryDto objects for the _sampleCountries list in the Setup method. Also, adjust the assertions and test cases based on your specific requirements and sample data.
+
+
+
+
+User
+provide mock with few counties // Add sample CountryDto objects here for testing
+ChatGPT
+Certainly! Here's an example of how you can set up a mock and provide sample CountryDto objects for testing using Moq:
+
+csharp
+Copy code
+using System.Collections.Generic;
+using Moq;
+using NUnit.Framework;
+
+[TestFixture]
+public class CountryExtensionsTests
+{
+    private List<CountryDto> _sampleCountries;
+    private Mock<IEnumerable<CountryDto>> _mockCountries;
+
+    [SetUp]
+    public void Setup()
+    {
+        _sampleCountries = new List<CountryDto>
+        {
+            new CountryDto
+            {
+                Name = new Name
+                {
+                    Common = "United States",
+                    Official = "United States of America"
+                },
+                Population = 331002651
+                // Add more properties as needed
+            },
+            new CountryDto
+            {
+                Name = new Name
+                {
+                    Common = "Canada",
+                    Official = "Canada"
+                },
+                Population = 37742154
+                // Add more properties as needed
+            },
+            // Add more sample countries here
+        };
+
+        _mockCountries = new Mock<IEnumerable<CountryDto>>();
+        _mockCountries.Setup(c => c.GetEnumerator()).Returns(_sampleCountries.GetEnumerator());
+    }
+
+    // Rest of the test methods as provided in the previous response
+}
+In this example, I've added two sample CountryDto objects to the _sampleCountries list in the Setup method. You can add more sample countries with their properties as needed for your tests. The _mockCountries mock is set up to return the enumerator of the _sampleCountries list when its GetEnumerator method is called. This allows you to mock the behavior of an IEnumerable<CountryDto> for testing your extension methods.
+
+Remember to adjust the sample data and assertions in the test methods based on your specific requirements.
+
+
+
+
+User
+Write all posiable tests for FilterByName
+ChatGPT
+Sure, I can help you with that. Here are some possible tests you can write for the FilterByName method using NUnit and Moq:
+
+csharp
+Copy code
+using System.Collections.Generic;
+using System.Linq;
+using Moq;
+using NUnit.Framework;
+
+[TestFixture]
+public class CountryExtensionsTests
+{
+    private List<CountryDto> _sampleCountries;
+    private Mock<IEnumerable<CountryDto>> _mockCountries;
+
+    [SetUp]
+    public void Setup()
+    {
+        _sampleCountries = new List<CountryDto>
+        {
+            new CountryDto
+            {
+                Name = new Name
+                {
+                    Common = "United States",
+                    Official = "United States of America"
+                },
+                Population = 331002651
+                // Add more properties as needed
+            },
+            new CountryDto
+            {
+                Name = new Name
+                {
+                    Common = "Canada",
+                    Official = "Canada"
+                },
+                Population = 37742154
+                // Add more properties as needed
+            },
+            // Add more sample countries here
+        };
+
+        _mockCountries = new Mock<IEnumerable<CountryDto>>();
+        _mockCountries.Setup(c => c.GetEnumerator()).Returns(_sampleCountries.GetEnumerator());
+    }
+
+    [Test]
+    public void FilterByName_WithCommonName_ShouldReturnMatchingCountries()
+    {
+        // Arrange
+        string filter = "United";
+        var countries = _mockCountries.Object;
+
+        // Act
+        var filteredCountries = countries.FilterByName(filter);
+
+        // Assert
+        Assert.That(filteredCountries, Is.Not.Null);
+        Assert.That(filteredCountries.Count, Is.EqualTo(1));
+        Assert.That(filteredCountries.First().Name.Common, Is.EqualTo("United States"));
+    }
+
+    [Test]
+    public void FilterByName_WithOfficialName_ShouldReturnMatchingCountries()
+    {
+        // Arrange
+        string filter = "America";
+        var countries = _mockCountries.Object;
+
+        // Act
+        var filteredCountries = countries.FilterByName(filter);
+
+        // Assert
+        Assert.That(filteredCountries, Is.Not.Null);
+        Assert.That(filteredCountries.Count, Is.EqualTo(1));
+        Assert.That(filteredCountries.First().Name.Common, Is.EqualTo("United States"));
+    }
+
+    [Test]
+    public void FilterByName_NoMatches_ShouldReturnEmptyList()
+    {
+        // Arrange
+        string filter = "Japan";
+        var countries = _mockCountries.Object;
+
+        // Act
+        var filteredCountries = countries.FilterByName(filter);
+
+        // Assert
+        Assert.That(filteredCountries, Is.Not.Null);
+        Assert.That(filteredCountries.Count, Is.EqualTo(0));
+    }
+
+    // Add more test cases for different scenarios
+}
+Feel free to add more test cases to cover different scenarios, such as case-insensitivity, partial matches, multiple matches, no matches, and so on. This will ensure thorough testing of your FilterByName method.
+
+
+
+
+User
+write tests for FilterByPopulation 
+ChatGPT
+Certainly! Here are some tests for the FilterByPopulation method using NUnit and Moq:
+
+csharp
+Copy code
+using System.Collections.Generic;
+using System.Linq;
+using Moq;
+using NUnit.Framework;
+
+[TestFixture]
+public class CountryExtensionsTests
+{
+    private List<CountryDto> _sampleCountries;
+    private Mock<IEnumerable<CountryDto>> _mockCountries;
+
+    [SetUp]
+    public void Setup()
+    {
+        _sampleCountries = new List<CountryDto>
+        {
+            new CountryDto
+            {
+                Name = new Name
+                {
+                    Common = "United States",
+                    Official = "United States of America"
+                },
+                Population = 331002651
+                // Add more properties as needed
+            },
+            new CountryDto
+            {
+                Name = new Name
+                {
+                    Common = "Canada",
+                    Official = "Canada"
+                },
+                Population = 37742154
+                // Add more properties as needed
+            },
+            // Add more sample countries here
+        };
+
+        _mockCountries = new Mock<IEnumerable<CountryDto>>();
+        _mockCountries.Setup(c => c.GetEnumerator()).Returns(_sampleCountries.GetEnumerator());
+    }
+
+    [Test]
+    public void FilterByPopulation_ShouldReturnCountriesWithLessPopulation()
+    {
+        // Arrange
+        int maxPopulationMillions = 40; // Max population set to 40 million
+        var countries = _mockCountries.Object;
+
+        // Act
+        var filteredCountries = countries.FilterByPopulation(maxPopulationMillions);
+
+        // Assert
+        Assert.That(filteredCountries, Is.Not.Null);
+        Assert.That(filteredCountries.Count, Is.EqualTo(1));
+        Assert.That(filteredCountries.First().Name.Common, Is.EqualTo("Canada"));
+    }
+
+    [Test]
+    public void FilterByPopulation_NoMatches_ShouldReturnEmptyList()
+    {
+        // Arrange
+        int maxPopulationMillions = 10; // Max population set to 10 million
+        var countries = _mockCountries.Object;
+
+        // Act
+        var filteredCountries = countries.FilterByPopulation(maxPopulationMillions);
+
+        // Assert
+        Assert.That(filteredCountries, Is.Not.Null);
+        Assert.That(filteredCountries.Count, Is.EqualTo(0));
+    }
+
+    // Add more test cases for different scenarios
+}
+You can modify the maxPopulationMillions value and add more test cases to cover different scenarios, such as larger population values, equal population values, and more. This will help ensure comprehensive testing of your FilterByPopulation method.
+
+
+
+
+User
+write tests for SortByName
+ChatGPT
+Certainly! Here are some tests for the SortByName method using NUnit and Moq:
+
+csharp
+Copy code
+using System.Collections.Generic;
+using System.Linq;
+using Moq;
+using NUnit.Framework;
+
+[TestFixture]
+public class CountryExtensionsTests
+{
+    private List<CountryDto> _sampleCountries;
+    private Mock<IEnumerable<CountryDto>> _mockCountries;
+
+    [SetUp]
+    public void Setup()
+    {
+        _sampleCountries = new List<CountryDto>
+        {
+            new CountryDto
+            {
+                Name = new Name
+                {
+                    Common = "Canada",
+                    Official = "Canada"
+                },
+                Population = 37742154
+                // Add more properties as needed
+            },
+            new CountryDto
+            {
+                Name = new Name
+                {
+                    Common = "United States",
+                    Official = "United States of America"
+                },
+                Population = 331002651
+                // Add more properties as needed
+            },
+            // Add more sample countries here
+        };
+
+        _mockCountries = new Mock<IEnumerable<CountryDto>>();
+        _mockCountries.Setup(c => c.GetEnumerator()).Returns(_sampleCountries.GetEnumerator());
+    }
+
+    [Test]
+    public void SortByName_Ascending_ShouldReturnCountriesInAscendingOrder()
+    {
+        // Arrange
+        string sortOrder = "ascend";
+        var countries = _mockCountries.Object;
+
+        // Act
+        var sortedCountries = countries.SortByName(sortOrder);
+
+        // Assert
+        Assert.That(sortedCountries, Is.Not.Null);
+        Assert.That(sortedCountries.First().Name.Common, Is.EqualTo("Canada"));
+    }
+
+    [Test]
+    public void SortByName_Descending_ShouldReturnCountriesInDescendingOrder()
+    {
+        // Arrange
+        string sortOrder = "descend";
+        var countries = _mockCountries.Object;
+
+        // Act
+        var sortedCountries = countries.SortByName(sortOrder);
+
+        // Assert
+        Assert.That(sortedCountries, Is.Not.Null);
+        Assert.That(sortedCountries.First().Name.Common, Is.EqualTo("United States"));
+    }
+
+    [Test]
+    public void SortByName_InvalidSortOrder_ShouldThrowArgumentException()
+    {
+        // Arrange
+        string invalidSortOrder = "invalid";
+        var countries = _mockCountries.Object;
+
+        // Act & Assert
+        Assert.Throws<ArgumentException>(() => countries.SortByName(invalidSortOrder));
+    }
+
+    // Add more test cases for different scenarios
+}
+You can adjust the sample data, assertions, and test cases to fit your specific use case. Adding more test cases will help ensure thorough testing of your SortByName method.
+
+
+
+
+User
+Write tests for Paginate
+ChatGPT
+Certainly! Here are some tests for the Paginate method using NUnit and Moq:
+
+csharp
+Copy code
+using System.Collections.Generic;
+using System.Linq;
+using Moq;
+using NUnit.Framework;
+
+[TestFixture]
+public class CountryExtensionsTests
+{
+    private List<CountryDto> _sampleCountries;
+    private Mock<IEnumerable<CountryDto>> _mockCountries;
+
+    [SetUp]
+    public void Setup()
+    {
+        _sampleCountries = new List<CountryDto>
+        {
+            new CountryDto
+            {
+                Name = new Name
+                {
+                    Common = "United States",
+                    Official = "United States of America"
+                },
+                Population = 331002651
+                // Add more properties as needed
+            },
+            new CountryDto
+            {
+                Name = new Name
+                {
+                    Common = "Canada",
+                    Official = "Canada"
+                },
+                Population = 37742154
+                // Add more properties as needed
+            },
+            // Add more sample countries here
+        };
+
+        _mockCountries = new Mock<IEnumerable<CountryDto>>();
+        _mockCountries.Setup(c => c.GetEnumerator()).Returns(_sampleCountries.GetEnumerator());
+    }
+
+    [Test]
+    public void Paginate_ShouldReturnFirstNCountries()
+    {
+        // Arrange
+        int pagination = 1; // Get the first country
+        var countries = _mockCountries.Object;
+
+        // Act
+        var paginatedCountries = countries.Paginate(pagination);
+
+        // Assert
+        Assert.That(paginatedCountries, Is.Not.Null);
+        Assert.That(paginatedCountries.Count, Is.EqualTo(1));
+        Assert.That(paginatedCountries.First().Name.Common, Is.EqualTo("United States"));
+    }
+
+    [Test]
+    public void Paginate_InvalidPagination_ShouldThrowArgumentOutOfRangeException()
+    {
+        // Arrange
+        int invalidPagination = -1; // Negative pagination value
+        var countries = _mockCountries.Object;
+
+        // Act & Assert
+        Assert.Throws<ArgumentOutOfRangeException>(() => countries.Paginate(invalidPagination));
+    }
+
+    [Test]
+    public void Paginate_LargerPagination_ShouldReturnAllCountries()
+    {
+        // Arrange
+        int pagination = 10; // Greater than the number of sample countries
+        var countries = _mockCountries.Object;
+
+        // Act
+        var paginatedCountries = countries.Paginate(pagination);
+
+        // Assert
+        Assert.That(paginatedCountries, Is.Not.Null);
+        Assert.That(paginatedCountries.Count, Is.EqualTo(2)); // Total countries in the sample
+    }
+
+    // Add more test cases for different scenarios
+}
+You can adjust the sample data, assertions, and test cases to fit your specific use case. Adding more test cases will help ensure thorough testing of your Paginate method.
