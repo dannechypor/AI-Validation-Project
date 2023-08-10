@@ -35,6 +35,11 @@ public class CountryService : ICountryService
         {
             countries = FilterByPopulation(countries, countryFilterDto.CountryPopulation.Value);
         }
+        
+        if (!string.IsNullOrWhiteSpace(countryFilterDto.SortBy))
+        {
+            countries = SortCountriesByName(countries, countryFilterDto.SortBy);
+        }
 
         return countries;
     }
@@ -54,5 +59,23 @@ public class CountryService : ICountryService
         double maxPopulation = maxPopulationMillions * 1_000_000; // Convert millions to actual population
 
         return countries.Where(country => country.Population < maxPopulation).ToList();
+    }
+
+    private static List<CountryDto> SortCountriesByName(List<CountryDto> countries, string sortOrder)
+    {
+        if (string.Equals(sortOrder, "ascend"))
+        {
+            countries = countries.OrderBy(country => country.Name.Common, StringComparer.OrdinalIgnoreCase).ToList();
+        }
+        else if (string.Equals(sortOrder, "descend"))
+        {
+            countries = countries.OrderByDescending(country => country.Name.Common, StringComparer.OrdinalIgnoreCase).ToList();
+        }
+        else
+        {
+            throw new ArgumentException("Invalid sort order. Use 'ascend' or 'descend'.", nameof(sortOrder));
+        }
+
+        return countries;
     }
 }

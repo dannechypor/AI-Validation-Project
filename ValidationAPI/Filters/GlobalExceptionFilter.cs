@@ -19,6 +19,7 @@ public class GlobalExceptionFilter : ExceptionFilterAttribute
                     statusCode = (int)HttpStatusCode.Unauthorized;
                     break;
                 case InvalidOperationException:
+                case ArgumentException:
                     statusCode = (int)HttpStatusCode.BadRequest;
                     break;
                 default:
