@@ -60,6 +60,7 @@ public class CountryService : ICountryService
 
         return countries.Where(country => country.Population < maxPopulation).ToList();
     }
+<<<<<<< HEAD
 
     private static List<CountryDto> SortCountriesByName(List<CountryDto> countries, string sortOrder)
     {
@@ -68,6 +69,16 @@ public class CountryService : ICountryService
             countries = countries.OrderBy(country => country.Name.Common, StringComparer.OrdinalIgnoreCase).ToList();
         }
         else if (string.Equals(sortOrder, "descend"))
+=======
+    
+    public static List<CountryDto> SortCountriesByName(List<CountryDto> countries, string sortOrder)
+    {
+        if (sortOrder.Equals("ascend", StringComparison.OrdinalIgnoreCase))
+        {
+            countries = countries.OrderBy(country => country.Name.Common, StringComparer.OrdinalIgnoreCase).ToList();
+        }
+        else if (sortOrder.Equals("descend", StringComparison.OrdinalIgnoreCase))
+>>>>>>> fe59504318798e447d9476315c94463931c85c15
         {
             countries = countries.OrderByDescending(country => country.Name.Common, StringComparer.OrdinalIgnoreCase).ToList();
         }
