@@ -1,5 +1,6 @@
 ﻿using System.Text.Json;
 using ValidationAPI.DTOs;
+using ValidationAPI.Helpers;
 using ValidationAPI.Interfaces;
 
 namespace ValidationAPI.Services;
@@ -17,76 +18,43 @@ public class CountryService : ICountryService
     {
         var httpClient = _httpClientFactory.GetHttpClient();
         var response = await httpClient.GetAsync("v3.1/all");
+        response.EnsureSuccessStatusCode();
 
         var content = await response.Content.ReadAsStringAsync();
         var countries = JsonSerializer.Deserialize<List<CountryDto>>(content);
 
-        if (countries == null || !countries.Any())
+        if (countries == null || countries.Count == 0)
         {
-            throw new Exception("Service processing api currently unavailable");
+            throw new Exception(ExceptionMessages.ServiceUnavailable);
         }
 
-        if (!string.IsNullOrWhiteSpace(countryFilterDto.CountryName))
-        {
-            countries = FilterCountriesByName(countries, countryFilterDto.CountryName);
-        }
-
-        if (countryFilterDto.CountryPopulation.HasValue)
-        {
-            countries = FilterByPopulation(countries, countryFilterDto.CountryPopulation.Value);
-        }
-
-        if (!string.IsNullOrWhiteSpace(countryFilterDto.SortBy))
-        {
-            countries = SortCountriesByName(countries, countryFilterDto.SortBy);
-        }
-
-        return countries;
+        return ApplyFiltersAndSorting(countries, countryFilterDto);
     }
 
-    private static List<CountryDto> FilterCountriesByName(IEnumerable<CountryDto> countries, string filter)
+    private static List<CountryDto> ApplyFiltersAndSorting(List<CountryDto> countries, CountryFilterDto filterDto)
     {
-        var searchQuery = filter.ToLower();
+        var filteredCountries = countries;
 
-        return countries.Where(country =>
-                country.Name.Common.ToLower().Contains(searchQuery) ||
-                country.Name.Official.ToLower().Contains(searchQuery))
-            .ToList();
-    }
-
-    private List<CountryDto> FilterByPopulation(IEnumerable<CountryDto> countries, int maxPopulationMillions)
-    {
-        double maxPopulation = maxPopulationMillions * 1_000_000; // Convert millions to actual population
-
-        return countries.Where(country => country.Population < maxPopulation).ToList();
-    }
-
-    private static List<CountryDto> SortCountriesByName(List<CountryDto> countries, string sortOrder)
-    {
-        if (string.Equals(sortOrder, "ascend", StringComparison.OrdinalIgnoreCase))
+        if (!string.IsNullOrWhiteSpace(filterDto.CountryName))
         {
-            countries = countries.OrderBy(country => country.Name.Common, StringComparer.OrdinalIgnoreCase).ToList();
-        }
-        else if (string.Equals(sortOrder, "descend", StringComparison.OrdinalIgnoreCase))
-        {
-            countries = countries.OrderByDescending(country => country.Name.Common, StringComparer.OrdinalIgnoreCase)
-                .ToList();
-        }
-        else
-        {
-            throw new ArgumentException("Invalid sort order. Use 'ascend' or 'descend'.", nameof(sortOrder));
+            filteredCountries = filteredCountries.FilterByName(filterDto.CountryName);
         }
 
-        return countries;
-    }
-    
-    private List<CountryDto> GetPaginatedList(List<CountryDto> countries, int pagination)
-    {
-        if (pagination <= 0)
+        if (filterDto.CountryPopulation.HasValue)
         {
-            throw new ArgumentOutOfRangeException(nameof(pagination), "Limit must be greater than 0");
+            filteredCountries = filteredCountries.FilterByPopulation(filterDto.CountryPopulation.Value);
         }
 
-        return countries.Take(pagination).ToList();
+        if (!string.IsNullOrWhiteSpace(filterDto.SortBy))
+        {
+            filteredCountries = filteredCountries.SortByName(filterDto.SortBy);
+        }
+
+        if (filterDto.Pagination.HasValue)
+        {
+            filteredCountries = filteredCountries.Paginate(filterDto.Pagination.Value);
+        }
+
+        return filteredCountries;
     }
 }
