@@ -20,7 +20,7 @@ public class CountriesController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<object>>> GetCountries([FromQuery] CountryFilterDto countryFilterDto)
     {
-        var countries = await _countryService.GetCountriesDataAsync();
+        var countries = await _countryService.GetCountriesDataAsync(countryFilterDto);
 
         return Ok(countries);
     }
