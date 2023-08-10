@@ -79,4 +79,14 @@ public class CountryService : ICountryService
 
         return countries;
     }
+    
+    private List<CountryDto> GetPaginatedList(List<CountryDto> countries, int pagination)
+    {
+        if (pagination <= 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(pagination), "Limit must be greater than 0");
+        }
+
+        return countries.Take(pagination).ToList();
+    }
 }
